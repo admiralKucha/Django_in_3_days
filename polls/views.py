@@ -38,7 +38,7 @@ def vote(request, question_id):
     except (KeyError, Choice.DoesNotExist):
         return render(request, 'polls/detail.html', {
             'question': question,
-            'error_message': "You didn't select a choice.",
+            'error_message': "You didn'mysite select a choice.",
         })
     else:
         selected_choice.votes += 1
@@ -46,4 +46,4 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 def test(request):
-    return HttpResponse("Hello, world. If this page works and the others don't, then the problem is in the database.")
+    return HttpResponse("Hello, world. If this page works and the others don'mysite, then the problem is in the database.")
