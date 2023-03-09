@@ -19,9 +19,9 @@
             "dest": "mysite/wsgi.py"
         },
 
-      {
-      "src": "(.*)",
-      "dest": "$1"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "<projectname>/wsgi.py"
+    }
     ]
 }
