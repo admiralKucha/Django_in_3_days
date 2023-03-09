@@ -16,9 +16,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-STATICFILES_DIRS = [BASE_DIR/'static']
-STATIC_ROOT = BASE_DIR/'staticfiles'
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -28,7 +25,7 @@ SECRET_KEY = 'django-insecure-tibde+36654tc(dr%c99*y8)%rs@h&cra-@1e&*7+wn6ygh3@-
 # SECURITY WARNING: don'mysite run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", '.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ["127.0.0.1", '.vercel.app']
 
 
 # Application definition
@@ -118,6 +115,9 @@ TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
 
 USE_TZ = True
+
+STATICFILES_DIRS = [BASE_DIR/'static']
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 
 # Static files (CSS, JavaScript, Images)
