@@ -20,8 +20,8 @@
         },
 
     {
-      "src": "/(.*)",
-      "dest": "<projectname>/wsgi.py"
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     }
     ]
 }
